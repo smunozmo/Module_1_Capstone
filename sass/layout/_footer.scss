@@ -1,1 +1,53 @@
 // footer
+
+footer {
+  background-color: $light-grey;
+  height: 13vw;
+  text-align: left;
+  padding: 3vw 0 0 0;
+
+  h2 {
+    color: $dark;
+    padding: 4vw 0 0 0;
+    font-size: 1.5vw;
+
+    &:after {
+      display: block;
+      clear: both;
+      content: "";
+      position: relative;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 4vw;
+      border-bottom: 1px solid #e2000f;
+      margin: 0 auto;
+      padding: 4px 0px;
+    }
+  }
+
+  .footer-image {
+    float: left;
+    text-align: right;
+    margin: 3vw 5vw 0 17vw;
+
+    img {
+      width: 20vw;
+      filter: grayscale(100%);
+      margin: 1vw 0 0 1vw;
+    }
+  }
+
+  .footer-text {
+    display: inline;
+
+    p {
+      margin: 1vw 15vw 0 3vw;
+      line-height: 1.7vw;
+    }
+  }
+}
+
+.bold {
+  font-weight: 600;
+}

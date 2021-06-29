@@ -1,1 +1,13 @@
 // mixins
+@mixin decoration {
+  text-decoration: none;
+  list-style: none;
+}
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}

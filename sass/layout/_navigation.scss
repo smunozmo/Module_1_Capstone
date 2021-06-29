@@ -1,1 +1,74 @@
 // header
+.top-bar {
+  background-color: $dark;
+
+  @include breakpoint(desktop) {
+    display: none;
+  }
+}
+
+.flex-nav {
+  .menu-open {
+    font-size: 7.5vw;
+    text-align: right;
+    padding: 6.25vw 5vw 0 0;
+    display: flex;
+    justify-content: flex-end;
+
+    @include breakpoint(desktop) {
+      display: none;
+    }
+  }
+
+  .menu {
+    display: none;
+    justify-content: center;
+    position: relative;
+    top: -17.5vw;
+    height: 177.5vw;
+    flex-direction: column;
+    background: url(../assets/img/menu-mobile.png) no-repeat;
+    background-size: cover;
+    background-position-y: 0;
+
+    @include breakpoint(desktop) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      height: 7vw;
+      align-items: center;
+      border: 1px solid #dddfe6;
+      top: 0;
+      box-shadow: 0 0.2vw 1vw $dark;
+    }
+
+    .logo {
+      img {
+        height: 4vw;
+      }
+    }
+
+    a {
+      font-size: 5vw;
+      align-self: center;
+      margin: 4vw 0;
+
+      @include breakpoint(desktop) {
+        margin: 0 3.47vw;
+        font-size: 1vw;
+
+        &:hover {
+          border-bottom: 0.14vw solid $dark;
+        }
+      }
+    }
+
+    .menu-close {
+      width: 5vw;
+      height: 5vw;
+      position: absolute;
+      top: 9.5vw;
+      right: 5.8vw;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+// partners
+
+.partners {
+  background-color: $dark;
+  height: 20vw;
+  text-align: center;
+
+  h2 {
+    color: $grey;
+    padding: 4vw 0 0 0;
+    font-size: 1.5vw;
+
+    &:after {
+      display: block;
+      clear: both;
+      content: "";
+      position: relative;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 4vw;
+      border-bottom: 1px solid #e2000f;
+      margin: 0 auto;
+      padding: 4px 0px;
+    }
+  }
+
+  &-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 3vw 0 3vw 0;
+
+    img {
+      width: 10vw;
+      filter: grayscale(100%);
+      margin: 2vw 2vw 0 2vw;
+    }
+  }
+
+  a {
+    color: $light-grey;
+    font-size: 1vw;
+    font-weight: 100;
+    border-bottom: 1px solid $light-grey;
+  }
+}

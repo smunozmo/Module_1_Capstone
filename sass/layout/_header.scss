@@ -1,1 +1,55 @@
 // header
+header {
+  background-image: url("../assets/img/bg.jpg");
+  background-size: cover;
+  margin: 0 0 0 0;
+  overflow: hidden;
+
+  .hello {
+    margin: 5vw 0 1vw 15vw;
+    font-size: 3vw;
+    color: $orange;
+    font-weight: 100;
+  }
+
+  .title {
+    font-family: $secondary-font;
+    text-transform: uppercase;
+
+    @include breakpoint(desktop) {
+      margin: 0 30vw 0 15vw;
+      font-size: 5vw;
+      color: $orange;
+      line-height: 5vw;
+    }
+  }
+
+  .intro {
+    @include breakpoint(desktop) {
+      margin: 0 30vw 0 15vw;
+      background-color: $light-grey;
+      border: 1px solid $white;
+      width: 48vw;
+    }
+
+    p {
+      font-size: 1vw;
+      line-height: 2vw;
+      color: $dark;
+      margin: 1vw 1vw 1vw 1vw;
+    }
+  }
+
+  .date {
+    margin: 2vw 30vw 0 15vw;
+    font-size: 2vw;
+    font-family: $secondary-font;
+    color: $mid-grey;
+  }
+
+  .at {
+    margin: 0.5vw 30vw 5vw 15vw;
+    font-size: 1.5vw;
+    color: $mid-grey;
+  }
+}
