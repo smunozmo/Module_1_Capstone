@@ -109,6 +109,236 @@ a {
   right: 5.8vw;
 }
 
+.about {
+  text-align: center;
+  padding-bottom: 5vw;
+}
+
+.about-bg {
+  background-image: url("../assets/img/bgabout.jpg");
+  height: unset;
+}
+
+@media (min-width: 768px) {
+  .about .hello {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .about .title {
+    margin: 5vw 20vw;
+  }
+}
+
+.about .intro {
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .about .intro {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.about .intro p:first-child {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .about .intro p:first-child {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .about .intro p:last-child {
+    display: none;
+  }
+}
+
+.about p {
+  padding-top: 5vw;
+  line-height: 5vw;
+  margin: 6vw 6vw 1vw 6vw;
+}
+
+@media (min-width: 768px) {
+  .about p {
+    padding: 1vw;
+    line-height: 5vw;
+    margin: 0;
+  }
+}
+
+.about .at {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .about .at {
+    padding-top: 4vw;
+    font-size: 1vw;
+    width: 50%;
+    line-height: 2vw;
+  }
+}
+
+.about strong {
+  font-size: 3vw;
+}
+
+@media (min-width: 768px) {
+  .about strong {
+    font-size: 1.1vw;
+  }
+}
+
+.about .subtitle {
+  line-height: 5vw;
+  margin: 0 12vw 10vw 12vw;
+  font-size: 3vw;
+  padding-top: 0;
+}
+
+@media (min-width: 768px) {
+  .about .subtitle {
+    font-size: 1vw;
+    line-height: 1.7vw;
+    margin: 3vw auto 0 auto;
+    width: 50%;
+  }
+}
+
+.about .full {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .about .full {
+    margin-top: -1vw;
+    display: block;
+  }
+}
+
+.about .logo {
+  border: 1px solid #e6e6e6;
+  margin: 6vw 6vw 10vw 6vw;
+  height: 30vw;
+}
+
+@media (min-width: 768px) {
+  .about .logo {
+    height: 7vw;
+    width: 35%;
+    margin: 3vw auto;
+  }
+}
+
+.about .logo .aligner {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.about .logo img {
+  height: 40%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .about .logo img {
+    padding-top: 3vw;
+    height: 5vw;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.about .separator {
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
+.about .concerts-wrap {
+  margin: 6vw 6vw 10vw 6vw;
+}
+
+@media (min-width: 768px) {
+  .about .concerts-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 2vw 0 -3vw 0;
+  }
+}
+
+.about .concerts-wrap h3 {
+  font-size: 8vw;
+  font-weight: 600;
+  color: #fff;
+  padding-top: 15vw;
+}
+
+@media (min-width: 768px) {
+  .about .concerts-wrap h3 {
+    font-size: 3vw;
+    padding: 5vw 0 0 0;
+  }
+}
+
+.about .concerts-wrap p {
+  font-size: 4vw;
+  color: #fff;
+  margin: 0;
+  padding-top: 2vw;
+}
+
+@media (min-width: 768px) {
+  .about .concerts-wrap p {
+    font-size: 1vw;
+    padding: 0;
+  }
+}
+
+.about .concerts-wrap .concert1 {
+  background-image: url("../assets/img/concert1.jpg");
+  background-size: contain;
+  margin-bottom: 4vw;
+  height: 49vw;
+}
+
+@media (min-width: 768px) {
+  .about .concerts-wrap .concert1 {
+    height: 16vw;
+    width: 29vw;
+    margin: 1vw;
+  }
+}
+
+.about .concerts-wrap .concert2 {
+  background-image: url("../assets/img/concert2.jpg");
+  background-size: contain;
+  margin-bottom: 4vw;
+  height: 49vw;
+}
+
+@media (min-width: 768px) {
+  .about .concerts-wrap .concert2 {
+    height: 16vw;
+    width: 29vw;
+    margin: 1vw;
+  }
+}
+
+@media (min-width: 768px) {
+  #partners-about {
+    display: none;
+  }
+}
+
 .featured {
   background-color: #fff;
   height: 100%;

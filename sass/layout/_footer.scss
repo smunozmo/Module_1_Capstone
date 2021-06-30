@@ -2,10 +2,10 @@
 
 footer {
   background-color: $light-grey;
-  
+
   text-align: left;
   padding: 3vw 0 10vw 0;
-  
+
   @include breakpoint(desktop) {
     padding: 3vw 0 3vw 0;
   }
@@ -24,7 +24,6 @@ footer {
         width: 20vw;
         margin: 1vw 0 0 1vw;
       }
-
     }
   }
 
