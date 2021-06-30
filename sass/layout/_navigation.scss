@@ -8,12 +8,14 @@
 }
 
 .flex-nav {
+  background: none;
+
   .menu-open {
-    font-size: 7.5vw;
-    text-align: right;
-    padding: 6.25vw 5vw 0 0;
-    display: flex;
-    justify-content: flex-end;
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 9.5vw;
+    left: 5.8vw;
 
     @include breakpoint(desktop) {
       display: none;
@@ -24,10 +26,10 @@
     display: none;
     justify-content: center;
     position: relative;
-    top: -17.5vw;
-    height: 177.5vw;
+    top: 0;
+    height: 150vw;
     flex-direction: column;
-    background: url(../assets/img/menu-mobile.png) no-repeat;
+    background: url(../assets/img/bg.jpg) no-repeat;
     background-size: cover;
     background-position-y: 0;
 
@@ -35,16 +37,21 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
+      background: none;
       height: 7vw;
       align-items: center;
       border: 1px solid #dddfe6;
       top: 0;
-      box-shadow: 0 0.2vw 1vw $dark;
+      box-shadow: 0 0.2vw 1vw $grey;
     }
 
     .logo {
       img {
-        height: 4vw;
+        height: 8vw;
+
+        @include breakpoint(desktop) {
+          height: 4vw;
+        }
       }
     }
 
