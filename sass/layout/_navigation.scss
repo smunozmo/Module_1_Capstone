@@ -1,9 +1,19 @@
 // header
 .top-bar {
-  background-color: $dark;
+  background-color: #3f3f3f;
+  display: none;
+  text-align: right;
+  padding-right: 19vw;
 
   @include breakpoint(desktop) {
-    display: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  a,
+  i {
+    color: $white;
+    padding: 0.5vw 1.5vw;
   }
 }
 
@@ -76,6 +86,10 @@
       position: absolute;
       top: 9.5vw;
       right: 5.8vw;
+
+      @include breakpoint(desktop) {
+        display: none;
+      }
     }
   }
 }

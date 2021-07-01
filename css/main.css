@@ -16,19 +16,30 @@ a {
 
 @font-face {
   font-family: "cocogooseregular";
-  src: url("../assets/fonts/cocogoose_trial-webfont.woff2") format("woff2"), url("../assets/fonts/cocogoose_trial-webfont.woff") format("woff");
+  src: url("../assets/fonts/cocogoose_trial-webfont.woff2") format("woff2"),
+    url("../assets/fonts/cocogoose_trial-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 .top-bar {
-  background-color: #272a31;
+  background-color: #3f3f3f;
+  display: none;
+  text-align: right;
+  padding-right: 19vw;
 }
 
 @media (min-width: 768px) {
   .top-bar {
-    display: none;
+    display: flex;
+    justify-content: flex-end;
   }
+}
+
+.top-bar a,
+.top-bar i {
+  color: #fff;
+  padding: 0.5vw 1.5vw;
 }
 
 .flex-nav {
@@ -109,6 +120,12 @@ a {
   right: 5.8vw;
 }
 
+@media (min-width: 768px) {
+  .flex-nav .menu .menu-close {
+    display: none;
+  }
+}
+
 .about {
   text-align: center;
   padding-bottom: 5vw;
@@ -127,7 +144,7 @@ a {
 
 @media (min-width: 768px) {
   .about .title {
-    margin: 5vw 20vw;
+    margin: 5vw 20vw 3vw 20vw;
   }
 }
 
@@ -334,6 +351,24 @@ a {
 }
 
 @media (min-width: 768px) {
+  #footer-about {
+    background-color: #3f3f3f;
+  }
+}
+
+@media (min-width: 768px) {
+  #inverted-color {
+    filter: brightness(0) invert(1);
+  }
+}
+
+@media (min-width: 768px) {
+  #footer-text-about {
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
   #partners-about {
     display: none;
   }
@@ -416,7 +451,7 @@ a {
 @media (min-width: 768px) {
   .featured-wrap .featured-item .featured-image {
     background-image: url("../assets/img/squares.jpeg");
-    background-size: 4vw 4vw;
+    background-size: 5vw 5vw;
     background-position: top left;
     background-repeat: no-repeat;
   }
@@ -430,8 +465,8 @@ a {
 
 @media (min-width: 768px) {
   .featured-wrap .featured-item .featured-image img {
-    height: 8vw;
-    width: 8vw;
+    height: 10vw;
+    width: 10vw;
     margin: 1vw 0 0 1vw;
   }
 }
@@ -439,6 +474,12 @@ a {
 .featured-wrap .featured-item .featured-text {
   display: inline;
   width: 70%;
+}
+
+@media (min-width: 768px) {
+  .featured-wrap .featured-item .featured-text {
+    padding-left: 3vw;
+  }
 }
 
 .featured-wrap .featured-item .featured-text h3 {
@@ -452,7 +493,7 @@ a {
   .featured-wrap .featured-item .featured-text h3 {
     font-size: 1.5vw;
     font-weight: 600;
-    margin: 1vw 0 0 0;
+    margin: 1vw 0 0 12vw;
   }
 }
 
@@ -465,6 +506,7 @@ a {
 @media (min-width: 768px) {
   .featured-wrap .featured-item .featured-text h4 {
     font-size: initial;
+    margin: 1vw 0 0 12vw;
   }
 }
 
@@ -477,7 +519,7 @@ a {
 
 @media (min-width: 768px) {
   .featured-wrap .featured-item .featured-text p {
-    margin: 1vw 1vw 0 1vw;
+    margin: 1vw 1vw 0 12vw;
     line-height: 1.7vw;
     letter-spacing: initial;
     font-size: initial;
@@ -595,7 +637,7 @@ footer {
 
 @media (min-width: 768px) {
   footer {
-    padding: 3vw 0 3vw 0;
+    padding: 3vw 0 5vw 0;
   }
 }
 
@@ -614,7 +656,8 @@ footer .footer-image img {
 @media (min-width: 768px) {
   footer .footer-image img {
     width: 20vw;
-    margin: 1vw 0 0 1vw;
+    margin: 1vw 0 3vw 1vw;
+    padding-bottom: 2vw;
   }
 }
 
@@ -634,7 +677,7 @@ footer .footer-text p:last-child {
 
 @media (min-width: 768px) {
   footer .footer-text p {
-    margin: 1vw 15vw 0 3vw;
+    margin: 2vw 15vw 0 3vw;
     line-height: 1.7vw;
     font-size: initial;
   }

@@ -17,7 +17,7 @@
 
   .title {
     @include breakpoint(desktop) {
-      margin: 5vw 20vw;
+      margin: 5vw 20vw 3vw 20vw;
     }
   }
 
@@ -136,10 +136,9 @@
     margin: 6vw 6vw 10vw 6vw;
 
     @include breakpoint(desktop) {
-        display: flex;
-        justify-content: center;
-        margin: 2vw 0 -3vw 0;
-        
+      display: flex;
+      justify-content: center;
+      margin: 2vw 0 -3vw 0;
     }
 
     h3 {
@@ -151,7 +150,7 @@
       @include breakpoint(desktop) {
         font-size: 3vw;
         padding: 5vw 0 0 0;
-    }
+      }
     }
 
     p {
@@ -163,7 +162,7 @@
       @include breakpoint(desktop) {
         font-size: 1vw;
         padding: 0;
-    }
+      }
     }
 
     .concert1 {
@@ -171,7 +170,7 @@
       background-size: contain;
       margin-bottom: 4vw;
       height: 49vw;
-      
+
       @include breakpoint(desktop) {
         height: 16vw;
         width: 29vw;
@@ -189,14 +188,31 @@
         height: 16vw;
         width: 29vw;
         margin: 1vw;
+      }
     }
   }
-
 }
+
+#footer-about {
+  @include breakpoint(desktop) {
+    background-color: #3f3f3f;
+  }
+}
+
+#inverted-color {
+  @include breakpoint(desktop) {
+    filter: brightness(0) invert(1);
+  }
+}
+
+#footer-text-about {
+  @include breakpoint(desktop) {
+    color: $white;
+  }
 }
 
 #partners-about {
-    @include breakpoint(desktop) {
-      display: none;
-    }
+  @include breakpoint(desktop) {
+    display: none;
   }
+}
