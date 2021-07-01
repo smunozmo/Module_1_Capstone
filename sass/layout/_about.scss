@@ -21,30 +21,6 @@
     }
   }
 
-  .intro {
-    background-color: $white;
-
-    @include breakpoint(desktop) {
-      width: 60%;
-      margin: 0 auto;
-      padding: 0;
-    }
-
-    p:first-child {
-      display: none;
-
-      @include breakpoint(desktop) {
-        display: block;
-      }
-    }
-
-    p:last-child {
-      @include breakpoint(desktop) {
-        display: none;
-      }
-    }
-  }
-
   p {
     padding-top: 5vw;
     line-height: 5vw;
@@ -70,6 +46,7 @@
 
   strong {
     font-size: 3vw;
+
     @include breakpoint(desktop) {
       font-size: 1.1vw;
     }
@@ -88,8 +65,10 @@
       width: 50%;
     }
   }
+
   .full {
     display: none;
+
     @include breakpoint(desktop) {
       margin-top: -1vw;
       display: block;
@@ -191,6 +170,30 @@
       }
     }
   }
+
+  .intro {
+    background-color: $white;
+
+    @include breakpoint(desktop) {
+      width: 60%;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    p:first-child {
+      display: none;
+
+      @include breakpoint(desktop) {
+        display: block;
+      }
+    }
+
+    p:last-child {
+      @include breakpoint(desktop) {
+        display: none;
+      }
+    }
+  }
 }
 
 #footer-about {
@@ -206,6 +209,12 @@
 }
 
 #footer-text-about {
+  @include breakpoint(desktop) {
+    color: $white;
+  }
+}
+
+#footer-text-about2 {
   @include breakpoint(desktop) {
     color: $white;
   }

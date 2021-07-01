@@ -2,7 +2,6 @@
 
 .partners {
   background-color: $dark;
-
   text-align: center;
   padding-bottom: 1vw;
 
@@ -16,7 +15,7 @@
       font-size: 1.5vw;
     }
 
-    &:after {
+    &::after {
       display: block;
       clear: both;
       content: "";
@@ -27,7 +26,7 @@
       width: 4vw;
       border-bottom: 1px solid $orange;
       margin: 0 auto;
-      padding: 4px 0px;
+      padding: 4px 0;
     }
   }
 

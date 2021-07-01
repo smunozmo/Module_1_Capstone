@@ -4,7 +4,7 @@
 
 - Live version: [GitHub Page](https://github.com/smunozmo/HTML-basic-JavaScript-Capstone)
 
-![screenshot](./)
+![screenshot](./assets/img/screenshot.png)
 
 ## Built With
 

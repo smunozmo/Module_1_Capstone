@@ -5,6 +5,7 @@
   background-size: 5vw 5vw;
   background-color: $dark;
   padding-bottom: 4vw;
+
   @include breakpoint(desktop) {
     background-size: 2.5vw 2.5vw;
     padding-bottom: 0;
@@ -22,7 +23,7 @@
       font-size: 1.5vw;
     }
 
-    &:after {
+    &::after {
       display: block;
       clear: both;
       content: "";
@@ -33,7 +34,7 @@
       width: 10vw;
       border-bottom: 1px solid $orange;
       margin: 0 auto;
-      padding: 4px 0px;
+      padding: 4px 0;
 
       @include breakpoint(desktop) {
         width: 4vw;
@@ -142,7 +143,6 @@
         color: $light-grey;
         font-size: 1vw;
         font-weight: 100;
-
         text-decoration: underline;
         text-transform: uppercase;
       }

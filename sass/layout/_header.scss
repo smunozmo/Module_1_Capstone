@@ -42,7 +42,6 @@ header {
     @include breakpoint(desktop) {
       margin: 0 30vw 0 15vw;
       background-color: $light-grey;
-
       width: 48vw;
     }
 

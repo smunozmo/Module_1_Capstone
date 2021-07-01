@@ -16,8 +16,7 @@ a {
 
 @font-face {
   font-family: "cocogooseregular";
-  src: url("../assets/fonts/cocogoose_trial-webfont.woff2") format("woff2"),
-    url("../assets/fonts/cocogoose_trial-webfont.woff") format("woff");
+  src: url("../assets/fonts/cocogoose_trial-webfont.woff2") format("woff2"), url("../assets/fonts/cocogoose_trial-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -145,34 +144,6 @@ a {
 @media (min-width: 768px) {
   .about .title {
     margin: 5vw 20vw 3vw 20vw;
-  }
-}
-
-.about .intro {
-  background-color: #fff;
-}
-
-@media (min-width: 768px) {
-  .about .intro {
-    width: 60%;
-    margin: 0 auto;
-    padding: 0;
-  }
-}
-
-.about .intro p:first-child {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .about .intro p:first-child {
-    display: block;
-  }
-}
-
-@media (min-width: 768px) {
-  .about .intro p:last-child {
-    display: none;
   }
 }
 
@@ -350,6 +321,34 @@ a {
   }
 }
 
+.about .intro {
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .about .intro {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.about .intro p:first-child {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .about .intro p:first-child {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .about .intro p:last-child {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   #footer-about {
     background-color: #3f3f3f;
@@ -364,6 +363,12 @@ a {
 
 @media (min-width: 768px) {
   #footer-text-about {
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  #footer-text-about2 {
     color: #fff;
   }
 }
@@ -393,7 +398,7 @@ a {
   }
 }
 
-.featured h2:after {
+.featured h2::after {
   display: block;
   clear: both;
   content: "";
@@ -408,7 +413,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  .featured h2:after {
+  .featured h2::after {
     width: 4vw;
   }
 }
@@ -718,7 +723,7 @@ footer .footer-text .bold {
   }
 }
 
-.program h2:after {
+.program h2::after {
   display: block;
   clear: both;
   content: "";
@@ -729,11 +734,11 @@ footer .footer-text .bold {
   width: 10vw;
   border-bottom: 1px solid #ec5242;
   margin: 0 auto;
-  padding: 4px 0px;
+  padding: 4px 0;
 }
 
 @media (min-width: 768px) {
-  .program h2:after {
+  .program h2::after {
     width: 4vw;
   }
 }
@@ -878,7 +883,7 @@ footer .footer-text .bold {
   }
 }
 
-.partners h2:after {
+.partners h2::after {
   display: block;
   clear: both;
   content: "";
@@ -889,7 +894,7 @@ footer .footer-text .bold {
   width: 4vw;
   border-bottom: 1px solid #ec5242;
   margin: 0 auto;
-  padding: 4px 0px;
+  padding: 4px 0;
 }
 
 .partners-wrap {
