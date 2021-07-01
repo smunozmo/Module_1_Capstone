@@ -2,7 +2,7 @@
 
 > Welcome to my HTML + CSS + Javascript Capstone project, feel free to look around.
 
-- Live version: [GitHub Page](https://github.com/smunozmo/HTML-basic-JavaScript-Capstone)
+- Live version: [GitHub Page](https://smunozmo.github.io/Module_1_Capstone/)
 
 ![screenshot](./assets/img/screenshot.png)
 
