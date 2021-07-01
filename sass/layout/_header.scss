@@ -1,11 +1,11 @@
 // header
-header {
+.hello {
   background-image: url("../assets/img/bg.jpg");
   background-size: cover;
   margin: 0 0 0 0;
   overflow: hidden;
 
-  .hello {
+  .subheading {
     font-size: 5vw;
     color: $orange;
     margin: 30vw 6vw 1vw 6vw;

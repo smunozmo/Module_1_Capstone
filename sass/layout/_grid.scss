@@ -98,7 +98,7 @@
           margin: 1vw 0 0 0;
 
           @include breakpoint(desktop) {
-            font-size: 1.5vw;
+            font-size: 1.7vw;
             font-weight: 600;
             margin: 1vw 0 0 12vw;
           }
@@ -110,7 +110,7 @@
           font-size: 3vw;
 
           @include breakpoint(desktop) {
-            font-size: initial;
+            font-size: 1vw;
             margin: 1vw 0 0 12vw;
           }
         }
@@ -125,7 +125,7 @@
             margin: 1vw 1vw 0 12vw;
             line-height: 1.7vw;
             letter-spacing: initial;
-            font-size: initial;
+            font-size: 1.1vw;
           }
         }
       }

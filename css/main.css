@@ -77,7 +77,7 @@ a {
     flex-direction: row;
     justify-content: center;
     background: none;
-    height: 7vw;
+    height: 5vw;
     align-items: center;
     border: 1px solid #dddfe6;
     top: 0;
@@ -125,48 +125,50 @@ a {
   }
 }
 
-.about {
+#about-page .about {
   text-align: center;
   padding-bottom: 5vw;
 }
 
-.about-bg {
+#about-page .about-bg {
   background-image: url("../assets/img/bgabout.jpg");
   height: unset;
 }
 
 @media (min-width: 768px) {
-  .about .hello {
+  #about-page .about .subheading {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  .about .title {
+  #about-page .about .title {
     margin: 5vw 20vw 3vw 20vw;
   }
 }
 
-.about p {
-  padding-top: 5vw;
-  line-height: 5vw;
-  margin: 6vw 6vw 1vw 6vw;
+#about-page .about p {
+  line-height: 6vw;
+  margin: 7vw 6vw 7vw 6vw;
 }
 
 @media (min-width: 768px) {
-  .about p {
+  #about-page .about p {
+    font-size: 1.1vw;
+    letter-spacing: 0.05vw;
     padding: 1vw;
-    line-height: 5vw;
+    line-height: 2.5vw;
     margin: 0;
   }
 }
 
-.about .at {
+#about-page .about .at {
   margin: 0 auto;
+  padding-top: 7vw;
 }
 
 @media (min-width: 768px) {
-  .about .at {
+  #about-page .about .at {
     padding-top: 4vw;
     font-size: 1vw;
     width: 50%;
@@ -174,17 +176,17 @@ a {
   }
 }
 
-.about strong {
+#about-page .about strong {
   font-size: 3vw;
 }
 
 @media (min-width: 768px) {
-  .about strong {
+  #about-page .about strong {
     font-size: 1.1vw;
   }
 }
 
-.about .subtitle {
+#about-page .about .subtitle {
   line-height: 5vw;
   margin: 0 12vw 10vw 12vw;
   font-size: 3vw;
@@ -192,7 +194,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  .about .subtitle {
+  #about-page .about .subtitle {
     font-size: 1vw;
     line-height: 1.7vw;
     margin: 3vw auto 0 auto;
@@ -200,45 +202,45 @@ a {
   }
 }
 
-.about .full {
+#about-page .about .full {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .about .full {
+  #about-page .about .full {
     margin-top: -1vw;
     display: block;
   }
 }
 
-.about .logo {
+#about-page .about .logo {
   border: 1px solid #e6e6e6;
   margin: 6vw 6vw 10vw 6vw;
   height: 30vw;
 }
 
 @media (min-width: 768px) {
-  .about .logo {
+  #about-page .about .logo {
     height: 7vw;
     width: 35%;
     margin: 3vw auto;
   }
 }
 
-.about .logo .aligner {
+#about-page .about .logo .aligner {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
 
-.about .logo img {
+#about-page .about .logo img {
   height: 40%;
   display: inline-block;
   vertical-align: middle;
 }
 
 @media (min-width: 768px) {
-  .about .logo img {
+  #about-page .about .logo img {
     padding-top: 3vw;
     height: 5vw;
     display: inline-block;
@@ -246,24 +248,24 @@ a {
   }
 }
 
-.about .separator {
+#about-page .about .separator {
   height: 1px;
   background-color: #e6e6e6;
 }
 
-.about .concerts-wrap {
+#about-page .about .concerts-wrap {
   margin: 6vw 6vw 10vw 6vw;
 }
 
 @media (min-width: 768px) {
-  .about .concerts-wrap {
+  #about-page .about .concerts-wrap {
     display: flex;
     justify-content: center;
     margin: 2vw 0 -3vw 0;
   }
 }
 
-.about .concerts-wrap h3 {
+#about-page .about .concerts-wrap h3 {
   font-size: 8vw;
   font-weight: 600;
   color: #fff;
@@ -271,13 +273,13 @@ a {
 }
 
 @media (min-width: 768px) {
-  .about .concerts-wrap h3 {
+  #about-page .about .concerts-wrap h3 {
     font-size: 3vw;
     padding: 5vw 0 0 0;
   }
 }
 
-.about .concerts-wrap p {
+#about-page .about .concerts-wrap p {
   font-size: 4vw;
   color: #fff;
   margin: 0;
@@ -285,13 +287,13 @@ a {
 }
 
 @media (min-width: 768px) {
-  .about .concerts-wrap p {
+  #about-page .about .concerts-wrap p {
     font-size: 1vw;
     padding: 0;
   }
 }
 
-.about .concerts-wrap .concert1 {
+#about-page .about .concerts-wrap .concert1 {
   background-image: url("../assets/img/concert1.jpg");
   background-size: contain;
   margin-bottom: 4vw;
@@ -299,14 +301,14 @@ a {
 }
 
 @media (min-width: 768px) {
-  .about .concerts-wrap .concert1 {
+  #about-page .about .concerts-wrap .concert1 {
     height: 16vw;
     width: 29vw;
     margin: 1vw;
   }
 }
 
-.about .concerts-wrap .concert2 {
+#about-page .about .concerts-wrap .concert2 {
   background-image: url("../assets/img/concert2.jpg");
   background-size: contain;
   margin-bottom: 4vw;
@@ -314,38 +316,22 @@ a {
 }
 
 @media (min-width: 768px) {
-  .about .concerts-wrap .concert2 {
+  #about-page .about .concerts-wrap .concert2 {
     height: 16vw;
     width: 29vw;
     margin: 1vw;
   }
 }
 
-.about .intro {
+#about-page .about .intro {
   background-color: #fff;
 }
 
 @media (min-width: 768px) {
-  .about .intro {
+  #about-page .about .intro {
     width: 60%;
     margin: 0 auto;
     padding: 0;
-  }
-}
-
-.about .intro p:first-child {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .about .intro p:first-child {
-    display: block;
-  }
-}
-
-@media (min-width: 768px) {
-  .about .intro p:last-child {
-    display: none;
   }
 }
 
@@ -377,6 +363,16 @@ a {
   #partners-about {
     display: none;
   }
+}
+
+#active {
+  color: #ec5242;
+}
+
+#buy {
+  color: #ec5242;
+  padding: 0.5vw 0.8vw;
+  border: 2px solid #ec5242;
 }
 
 .featured {
@@ -496,7 +492,7 @@ a {
 
 @media (min-width: 768px) {
   .featured-wrap .featured-item .featured-text h3 {
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     font-weight: 600;
     margin: 1vw 0 0 12vw;
   }
@@ -510,7 +506,7 @@ a {
 
 @media (min-width: 768px) {
   .featured-wrap .featured-item .featured-text h4 {
-    font-size: initial;
+    font-size: 1vw;
     margin: 1vw 0 0 12vw;
   }
 }
@@ -527,7 +523,7 @@ a {
     margin: 1vw 1vw 0 12vw;
     line-height: 1.7vw;
     letter-spacing: initial;
-    font-size: initial;
+    font-size: 1.1vw;
   }
 }
 
@@ -538,28 +534,28 @@ a {
   border-bottom: 1px solid #e6e6e6;
 }
 
-header {
+.hello {
   background-image: url("../assets/img/bg.jpg");
   background-size: cover;
   margin: 0 0 0 0;
   overflow: hidden;
 }
 
-header .hello {
+.hello .subheading {
   font-size: 5vw;
   color: #ec5242;
   margin: 30vw 6vw 1vw 6vw;
 }
 
 @media (min-width: 768px) {
-  header .hello {
+  .hello .subheading {
     margin: 5vw 0 1vw 15vw;
     font-size: 3vw;
     font-weight: 100;
   }
 }
 
-header .title {
+.hello .title {
   font-family: cocogooseregular, sans-serif;
   text-transform: uppercase;
   font-size: 7vw;
@@ -570,14 +566,14 @@ header .title {
 }
 
 @media (min-width: 768px) {
-  header .title {
+  .hello .title {
     margin: 0 30vw 0 15vw;
     font-size: 5vw;
     line-height: 5vw;
   }
 }
 
-header .intro {
+.hello .intro {
   margin: 6vw 6vw 1vw 6vw;
   background-color: #e6e6e6;
   border: 1px solid #fff;
@@ -585,14 +581,14 @@ header .intro {
 }
 
 @media (min-width: 768px) {
-  header .intro {
+  .hello .intro {
     margin: 0 30vw 0 15vw;
     background-color: #e6e6e6;
     width: 48vw;
   }
 }
 
-header .intro p {
+.hello .intro p {
   font-size: 3vw;
   line-height: 5vw;
   margin: 3vw;
@@ -600,14 +596,14 @@ header .intro p {
 }
 
 @media (min-width: 768px) {
-  header .intro p {
+  .hello .intro p {
     font-size: 1vw;
     line-height: 2vw;
     margin: 1vw 1vw 1vw 1vw;
   }
 }
 
-header .date {
+.hello .date {
   margin: 4vw 6vw 1vw 6vw;
   font-size: 6vw;
   font-family: cocogooseregular, sans-serif;
@@ -615,20 +611,20 @@ header .date {
 }
 
 @media (min-width: 768px) {
-  header .date {
+  .hello .date {
     font-size: 2vw;
     margin: 2vw 30vw 0 15vw;
   }
 }
 
-header .at {
+.hello .at {
   font-size: 3vw;
   color: #525252;
   margin: 0 6vw 15vw 6vw;
 }
 
 @media (min-width: 768px) {
-  header .at {
+  .hello .at {
     margin: 0.5vw 30vw 5vw 15vw;
     font-size: 1.5vw;
   }
